@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <audio id="buzzer" src="buzz.mp3" type="audio/mpg" ></audio>
+</head>
+<body>
+
+    <div class="text-center">
+        <h1> <b>Pomodro Clock</b> </h1>
+        
+        <div class="timeDiv">
+
+            <h1 id="title1">Session Time </h1>
+            <a href="#" class="btn btn-primary" id="minus5Clock">-</a>
+            <h2 id="timeType"></h2>
+            <h2 id="num">25</h2>
+            <a href="#" class="btn btn-primary" id="add5Clock">+</a>
+            <a href="#" class="btn btn-primary" id="reset">Reset</a>
+
+        </div>
+
+        <div id="breakDiv">
+
+            <h1 id="title1">Break Time </h1>
+            <a href="#" class="btn btn-primary" id="minus5Break">-</a>
+            <h2 id="breakNum">5</h2>
+            <a href="#" class="btn btn-primary" id="add5Break">+</a>
+         </div>
+
+        <a href="#" class="btn btn-primary" id="start">Start</a> 
+    </div>
+    
+</body>
+</html>

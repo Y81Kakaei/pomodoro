@@ -1,0 +1,17 @@
+body{
+    background-image: url("pomodro.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    color:black;
+    font-family: "Montserrat";
+}
+
+h2{
+    display: inline;
+}
+
+#start{
+    margin: 10px;
+}
+ image
+
