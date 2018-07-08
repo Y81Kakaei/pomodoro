@@ -15,6 +15,7 @@ $(document).ready(function(){
 
         var counter = setInterval(timer, 1000);
         count *= 60;
+        breakTime *= 60;
         
 
         function timer() {
@@ -48,11 +49,11 @@ $(document).ready(function(){
             function breakTimer(){
                 $("#timeType").html("Break Time: ");
                 $("#breakNum").show();
-                breakTime *= 60;
+                
                 $("#timeType").show();
 
                 breakTime -= 1;
-                //console.log(breakTime);
+                console.log(breakTime);
                 if(breakTime === 0){
                     clearInterval(startBreak);
                     buzzer.play();
@@ -63,8 +64,10 @@ $(document).ready(function(){
                 if(breakTime % 60 >= 10){
 
                     $("#breakNum").html(Math.floor(breakTime/60) + " : " + breakTime % 60);
+                    console.log(breakTime);
     
                 } else{
+
                     $("#breakNum").html(Math.floor(breakTime/60) + " : " +"0"+ breakTime % 60)
                 }
     
